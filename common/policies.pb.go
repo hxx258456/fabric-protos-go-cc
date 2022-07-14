@@ -6,7 +6,7 @@ package common
 import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	msp "github.com/hyperledger/fabric-protos-go/msp"
+	msp "github.com/hxx258456/fabric-protos-go-cc/msp"
 	math "math"
 )
 

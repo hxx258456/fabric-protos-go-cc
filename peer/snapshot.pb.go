@@ -8,10 +8,10 @@ import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
 	empty "github.com/golang/protobuf/ptypes/empty"
-	common "github.com/hyperledger/fabric-protos-go/common"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	common "github.com/hxx258456/fabric-protos-go-cc/common"
+	grpc "github.com/hxx258456/ccgo/grpc"
+	codes "github.com/hxx258456/ccgo/grpc/codes"
+	status "github.com/hxx258456/ccgo/grpc/status"
 	math "math"
 )
 
@@ -273,7 +273,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // SnapshotClient is the client API for Snapshot service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/hxx258456/ccgo/grpc#ClientConn.NewStream.
 type SnapshotClient interface {
 	// Generate a snapshot reqeust. SignedSnapshotRequest contains marshalled bytes for SnaphostRequest
 	Generate(ctx context.Context, in *SignedSnapshotRequest, opts ...grpc.CallOption) (*empty.Empty, error)

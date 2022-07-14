@@ -7,10 +7,10 @@ import (
 	context "context"
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	common "github.com/hyperledger/fabric-protos-go/common"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	common "github.com/hxx258456/fabric-protos-go-cc/common"
+	grpc "github.com/hxx258456/ccgo/grpc"
+	codes "github.com/hxx258456/ccgo/grpc/codes"
+	status "github.com/hxx258456/ccgo/grpc/status"
 	math "math"
 )
 
@@ -192,7 +192,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // BlockAttestationsClient is the client API for BlockAttestations service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/hxx258456/ccgo/grpc#ClientConn.NewStream.
 type BlockAttestationsClient interface {
 	// BlockAttestations receives an Envelope of type DELIVER_SEEK_INFO , then sends back a stream of BlockAttestations.
 	BlockAttestations(ctx context.Context, in *common.Envelope, opts ...grpc.CallOption) (BlockAttestations_BlockAttestationsClient, error)

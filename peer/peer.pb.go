@@ -7,9 +7,9 @@ import (
 	context "context"
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/hxx258456/ccgo/grpc"
+	codes "github.com/hxx258456/ccgo/grpc/codes"
+	status "github.com/hxx258456/ccgo/grpc/status"
 	math "math"
 )
 
@@ -52,7 +52,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // EndorserClient is the client API for Endorser service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/hxx258456/ccgo/grpc#ClientConn.NewStream.
 type EndorserClient interface {
 	ProcessProposal(ctx context.Context, in *SignedProposal, opts ...grpc.CallOption) (*ProposalResponse, error)
 }

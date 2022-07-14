@@ -8,9 +8,9 @@ import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
 	timestamp "github.com/golang/protobuf/ptypes/timestamp"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/hxx258456/ccgo/grpc"
+	codes "github.com/hxx258456/ccgo/grpc/codes"
+	status "github.com/hxx258456/ccgo/grpc/status"
 	math "math"
 )
 
@@ -1156,7 +1156,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // ChaincodeSupportClient is the client API for ChaincodeSupport service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/hxx258456/ccgo/grpc#ClientConn.NewStream.
 type ChaincodeSupportClient interface {
 	Register(ctx context.Context, opts ...grpc.CallOption) (ChaincodeSupport_RegisterClient, error)
 }
@@ -1260,7 +1260,7 @@ var _ChaincodeSupport_serviceDesc = grpc.ServiceDesc{
 
 // ChaincodeClient is the client API for Chaincode service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/hxx258456/ccgo/grpc#ClientConn.NewStream.
 type ChaincodeClient interface {
 	Connect(ctx context.Context, opts ...grpc.CallOption) (Chaincode_ConnectClient, error)
 }

@@ -7,7 +7,7 @@ import (
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
 	timestamp "github.com/golang/protobuf/ptypes/timestamp"
-	common "github.com/hyperledger/fabric-protos-go/common"
+	common "github.com/hxx258456/fabric-protos-go-cc/common"
 	math "math"
 )
 

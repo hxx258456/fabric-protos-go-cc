@@ -7,11 +7,11 @@ import (
 	context "context"
 	fmt "fmt"
 	proto "github.com/golang/protobuf/proto"
-	common "github.com/hyperledger/fabric-protos-go/common"
-	rwset "github.com/hyperledger/fabric-protos-go/ledger/rwset"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	common "github.com/hxx258456/fabric-protos-go-cc/common"
+	rwset "github.com/hxx258456/fabric-protos-go-cc/ledger/rwset"
+	grpc "github.com/hxx258456/ccgo/grpc"
+	codes "github.com/hxx258456/ccgo/grpc/codes"
+	status "github.com/hxx258456/ccgo/grpc/status"
 	math "math"
 )
 
@@ -485,7 +485,7 @@ const _ = grpc.SupportPackageIsVersion4
 
 // DeliverClient is the client API for Deliver service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/github.com/hxx258456/ccgo/grpc#ClientConn.NewStream.
 type DeliverClient interface {
 	// Deliver first requires an Envelope of type ab.DELIVER_SEEK_INFO with
 	// Payload data as a marshaled orderer.SeekInfo message,
